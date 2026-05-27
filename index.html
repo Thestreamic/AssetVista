@@ -7,117 +7,210 @@
 
 <style>
 body {
-  margin:0;
-  font-family:Segoe UI, system-ui;
-  background:#f5f6f8;
-  color:#111;
+  margin: 0;
+  font-family: Arial;
+  background: #0b1220;
+  color: white;
 }
 
-.nav {
-  padding:16px 30px;
-  display:flex;
-  justify-content:space-between;
-  background:#fff;
-  border-bottom:1px solid #ddd;
+/* HEADER */
+header {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.nav a {
-  text-decoration:none;
-  color:#333;
-  margin-left:16px;
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
 }
 
-.container {
-  max-width:1100px;
-  margin:auto;
-  padding:80px 20px;
-  display:flex;
-  align-items:center;
-  gap:60px;
+.hero h1 {
+  font-size: 42px;
 }
 
-.hero-text h1 {
-  font-size:44px;
-  margin-bottom:16px;
+.hero p {
+  color: #aaa;
 }
 
-.hero-text p {
-  font-size:18px;
-  color:#555;
+.btn {
+  padding: 12px 20px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.btn-primary {
-  background:#c5a46d;
-  padding:14px 26px;
-  border-radius:8px;
-  text-decoration:none;
-  color:#111;
-  font-weight:600;
-  display:inline-block;
-  margin-top:20px;
+.primary {
+  background: #2563eb;
+  color: white;
 }
 
-.btn-secondary {
-  margin-left:12px;
-  border:1px solid #ccc;
-  padding:14px 24px;
-  border-radius:8px;
-  text-decoration:none;
+.outline {
+  border: 1px solid #2563eb;
+  color: #2563eb;
 }
 
-.hero-image img {
-  width:100%;
-  border-radius:12px;
-  background:#fff;
-  padding:8px;
-  box-shadow:0 20px 40px rgba(0,0,0,0.1);
+/* FEATURE SECTION */
+.features {
+  padding: 60px 20px;
+  background: #020617;
 }
 
-.meta {
-  margin-top:10px;
-  font-size:14px;
-  color:#777;
+.feature {
+  max-width: 1100px;
+  margin: 70px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.feature h3 {
+  font-size: 26px;
+}
+
+.feature p {
+  color: #bbb;
+  line-height: 1.6;
+}
+
+/* alternating */
+.feature:nth-child(even) {
+  direction: rtl;
+}
+
+.feature:nth-child(even) div {
+  direction: ltr;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
 }
 </style>
+
 </head>
 
 <body>
 
-<!-- Navigation -->
-<div class="nav">
-  <strong>AssetVista</strong>
-  Features
-</div>
+<header>AssetVista</header>
 
-<div class="container">
+<section class="hero">
+  <h1>Media Intelligence Engine for Creators</h1>
+  <p>Organize, search, edit, and export media — all in one powerful local workspace</p>
 
-<div class="hero-text">
-<h1>Media Intelligence Engine for Creators</h1>
+  https://github.com/Thestreamic/AssetVista/releases/download/v2026.6/AssetVista_Setup_2026.6_Build141.exe" class="btn primary" target="_blank">
+    Download for Windows
+  </a>
 
-<p>
-Organize videos, searchable transcripts, PDFs, and assets —
-all in one standalone workspace.
-</p>
+  #features" class="btn outline">
+    View Features
+  </a>
 
-<!-- ✅ FIXED DOWNLOAD BUTTON -->
-https://github.com/Thestreamic/AssetVista/releases/download/v2026.6/AssetVista_Setup_2026.6_Build141.exe" class="btn-primary">
-Download for Windows →
-</a>
+  <p>✔ Runs locally • ✔ No cloud • ✔ Built for creators & editors</p>
+</section>
 
-View Features
-</a>
+<section id="features" class="features">
 
-<div class="meta">
-✔ Free 1‑month beta  
-✔ Verified clean (0/65)  
-✔ Runs locally — no cloud
-</div>
-</div>
+  <!-- SEARCH -->
+  <div class="feature">
+    images/search.png
+    <div>
+      <h3>🔍 Smart Search & Discovery</h3>
+      <p>
+        Instantly search across videos, scenes, transcripts and metadata.
+        Find exactly what you need without scanning entire files.
+      </p>
+    </div>
+  </div>
 
-<div class="hero-image">
-screenshot.png</div>
+  <!-- EDITOR -->
+  <div class="feature">
+    images/purecut.png
+    <div>
+      <h3>✂️ Pure Cuts Editor</h3>
+      <p>
+        Fast timeline editing with mark-in/out controls.
+        Build sequences and preview edits in real-time.
+      </p>
+    </div>
+  </div>
 
-</div>
+  <!-- ROUGH CUT -->
+  <div class="feature">
+    images/roughcut.png
+    <div>
+      <h3>🎬 Rough Cuts → Pro Editing Tools</h3>
+      <p>
+        Create rough cuts and export directly to Final Cut Pro,
+        Adobe Premiere, or Avid using EDL workflows.
+      </p>
+    </div>
+  </div>
+
+  <!-- REELS -->
+  <div class="feature">
+    images/reels.png
+    <div>
+      <h3>📱 Vertical & Social Edits</h3>
+      <p>
+        Quickly convert videos into vertical format (9:16).
+        Perfect for reels, shorts, and social media content.
+      </p>
+    </div>
+  </div>
+
+  <!-- EXPORT -->
+  <div class="feature">
+    images/export.png
+    <div>
+      <h3>🎬 Advanced Export Engine</h3>
+      <p>
+        Full control over codec, bitrate, resolution, and presets for
+        YouTube, TikTok, and more.
+      </p>
+    </div>
+  </div>
+
+  <!-- LIBRARY -->
+  <div class="feature">
+    images/documents.png
+    <div>
+      <h3>📁 Asset & Document Management</h3>
+      <p>
+        Organize videos, images, audio, and documents in a powerful grid-based library.
+      </p>
+    </div>
+  </div>
+
+  <!-- METADATA -->
+  <div class="feature">
+    images/metadata.png
+    <div>
+      <h3>📊 Technical Metadata View</h3>
+      <p>
+        Inspect detailed file info including codec, bitrate,
+        resolution and duration — instantly.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 AssetVista • Built for creators
+</footer>
 
 </body>
 </html>

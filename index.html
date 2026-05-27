@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>AssetVista</title>
 
 <style>
 body {
   margin: 0;
-  font-family: Arial;
-  background: #0b1220;
-  color: white;
+  font-family: Arial, sans-serif;
+  background: #ffffff;   /* ✅ WHITE BACKGROUND */
+  color: #222;
 }
 
-/* HEADER */
 header {
   padding: 20px;
-  font-size: 20px;
   font-weight: bold;
+  font-size: 20px;
 }
 
 /* HERO */
@@ -31,9 +31,10 @@ header {
 }
 
 .hero p {
-  color: #aaa;
+  color: #555;
 }
 
+/* BUTTONS */
 .btn {
   padding: 12px 20px;
   margin: 10px;
@@ -53,15 +54,14 @@ header {
   color: #2563eb;
 }
 
-/* FEATURE SECTION */
+/* FEATURES */
 .features {
   padding: 60px 20px;
-  background: #020617;
 }
 
 .feature {
   max-width: 1100px;
-  margin: 70px auto;
+  margin: 60px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -71,32 +71,20 @@ header {
 .feature img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
-.feature h3 {
-  font-size: 26px;
-}
-
-.feature p {
-  color: #bbb;
-  line-height: 1.6;
-}
-
-/* alternating */
+/* alternate layout */
 .feature:nth-child(even) {
   direction: rtl;
 }
-
 .feature:nth-child(even) div {
   direction: ltr;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  color: #888;
+  color: #777;
 }
 </style>
 
@@ -108,109 +96,59 @@ footer {
 
 <section class="hero">
   <h1>Media Intelligence Engine for Creators</h1>
-  <p>Organize, search, edit, and export media — all in one powerful local workspace</p>
 
-  https://github.com/Thestreamic/AssetVista/releases/download/v2026.6/AssetVista_Setup_2026.6_Build141.exe" class="btn primary" target="_blank">
-    Download for Windows
+  <p>Organize, search, edit, and export media — all in one workspace</p>
+
+  <!-- ✅ FIXED BUTTON -->
+  <a href="https://github.com/Thestreamic/AssetVista/releases/download/v2026.6/AssetVista_Setup_2026.6_Build141.exe"
+     class="btn primary"
+     target="_blank">
+     Download for Windows
   </a>
 
-  #features" class="btn outline">
-    View Features
+  <!-- ✅ FIXED BUTTON -->
+  <a href="#features" class="btn outline">
+     View Features
   </a>
 
-  <p>✔ Runs locally • ✔ No cloud • ✔ Built for creators & editors</p>
+  <p>✔ Runs locally • ✔ No cloud • ✔ Built for creators</p>
 </section>
 
 <section id="features" class="features">
 
-  <!-- SEARCH -->
+  <!-- ✅ SEARCH -->
   <div class="feature">
-    images/search.png
+    <img src="images/search.png" alt="Search">
     <div>
       <h3>🔍 Smart Search & Discovery</h3>
-      <p>
-        Instantly search across videos, scenes, transcripts and metadata.
-        Find exactly what you need without scanning entire files.
-      </p>
+      <p>Instantly search across videos, scenes and metadata.</p>
     </div>
   </div>
 
-  <!-- EDITOR -->
+  <!-- ✅ EDIT -->
   <div class="feature">
-    images/purecut.png
+    <img src="images/purecut.png" alt="Editor">
     <div>
       <h3>✂️ Pure Cuts Editor</h3>
-      <p>
-        Fast timeline editing with mark-in/out controls.
-        Build sequences and preview edits in real-time.
-      </p>
+      <p>Fast timeline editing with mark in/out controls.</p>
     </div>
   </div>
 
-  <!-- ROUGH CUT -->
+  <!-- ✅ ROUGH CUT -->
   <div class="feature">
-    images/roughcut.png
+    <img src="images/roughcut.png" alt="Rough cut">
     <div>
-      <h3>🎬 Rough Cuts → Pro Editing Tools</h3>
-      <p>
-        Create rough cuts and export directly to Final Cut Pro,
-        Adobe Premiere, or Avid using EDL workflows.
-      </p>
-    </div>
-  </div>
-
-  <!-- REELS -->
-  <div class="feature">
-    images/reels.png
-    <div>
-      <h3>📱 Vertical & Social Edits</h3>
-      <p>
-        Quickly convert videos into vertical format (9:16).
-        Perfect for reels, shorts, and social media content.
-      </p>
-    </div>
-  </div>
-
-  <!-- EXPORT -->
-  <div class="feature">
-    images/export.png
-    <div>
-      <h3>🎬 Advanced Export Engine</h3>
-      <p>
-        Full control over codec, bitrate, resolution, and presets for
-        YouTube, TikTok, and more.
-      </p>
-    </div>
-  </div>
-
-  <!-- LIBRARY -->
-  <div class="feature">
-    images/documents.png
-    <div>
-      <h3>📁 Asset & Document Management</h3>
-      <p>
-        Organize videos, images, audio, and documents in a powerful grid-based library.
-      </p>
-    </div>
-  </div>
-
-  <!-- METADATA -->
-  <div class="feature">
-    images/metadata.png
-    <div>
-      <h3>📊 Technical Metadata View</h3>
-      <p>
-        Inspect detailed file info including codec, bitrate,
-        resolution and duration — instantly.
-      </p>
+      <h3>🎬 Rough Cut to NLE</h3>
+      <p>Export to Final Cut, Premiere and Avid.</p>
     </div>
   </div>
 
 </section>
 
 <footer>
-  © 2026 AssetVista • Built for creators
+  © 2026 AssetVista
 </footer>
 
 </body>
 </html>
+``
